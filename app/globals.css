@@ -332,6 +332,7 @@ html.skip-intro .intro { display: none; }
 .legal-body p, .legal-body li { color: #2c3331; margin-bottom: .8rem; }
 .legal-body ul { padding-left: 1.2rem; margin-bottom: .8rem; }
 .legal-body a { text-decoration: underline; text-underline-offset: 2px; }
+.legal-pending { font-style: normal; color: var(--muted); }
 .legal-body mark { background: rgba(155, 238, 55, .45); padding: 0 .3rem; border-radius: 4px; font-weight: 600; }
 .legal-dl { display: grid; grid-template-columns: 220px 1fr; border-top: 1px solid var(--line); }
 .legal-dl dt, .legal-dl dd { padding: .75rem 0; border-bottom: 1px solid var(--line); }

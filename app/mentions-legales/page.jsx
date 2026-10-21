@@ -8,7 +8,8 @@ export const metadata = {
   alternates: { canonical: '/mentions-legales/' },
 };
 
-const Missing = ({ v }) => (v.startsWith('À COMPLÉTER') ? <mark>{v}</mark> : v);
+// Information pas encore fournie : mention neutre en attendant (la valeur se règle dans lib/legal.js)
+const Missing = ({ v }) => (v.startsWith('À COMPLÉTER') ? <em className="legal-pending">Information en cours de mise à jour</em> : v);
 
 export default function Page() {
   return (
