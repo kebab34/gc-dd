@@ -132,6 +132,10 @@ export function Quote() {
             )}
           </AnimatePresence>
           <p className="form-note">Réponse sous 48 h ouvrées. Devis gratuit et sans engagement.</p>
+          <p className="form-rgpd">
+            Les informations saisies sont utilisées par {site.name} uniquement pour répondre à votre demande et établir votre devis. Elles sont conservées 3 ans après notre dernier échange et ne sont jamais revendues.
+            Vous pouvez y accéder, les rectifier ou les faire supprimer en écrivant à <a href={`mailto:${site.email}`}>{site.email}</a>. <a href="/confidentialite/">En savoir plus</a>.
+          </p>
         </FadeUp>
       </div>
     </section>
@@ -168,7 +172,10 @@ export function Footer() {
         <motion.div className="footer-mark" style={{ y, rotate }} aria-hidden="true"><Monogram color="rgba(155,238,55,.18)" stroke={4} /></motion.div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} {site.name} · Tous droits réservés</span>
-          <a href="#">Mentions légales</a>
+          <nav className="footer-legal">
+            <a href="/mentions-legales/">Mentions légales</a>
+            <a href="/confidentialite/">Confidentialité & cookies</a>
+          </nav>
         </div>
       </div>
     </footer>
